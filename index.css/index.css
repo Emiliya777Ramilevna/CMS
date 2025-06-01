@@ -1,151 +1,152 @@
 @font-face {
-    font-family: "TT Lakes";
-    src: url(/index.css/Шрифты/TTLakes-Medium.woff);
+  font-family: "TT Lakes";
+  src: url(/index.css/Шрифты/TTLakes-Medium.woff);
 }
 
 .body {
-    margin: 0;
+  margin: 0;
 }
 
 .sidebar {
-    width: 320px;
-    height: 100vh;
-    filter: drop-shadow(16px 0 52px rgba(14, 24, 80, 0.2));
-    font-family: TT Lakes;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #1B1C21;
-    background-color: #FFFFFF;
-    padding-left: 24px;
-    padding-top: 23px;
-    padding-right: 24px;
-    padding-bottom: 32px;
+  width: 320px;
+  height: 100vh;
+  filter: drop-shadow(16px 0 52px rgba(14, 24, 80, 0.2));
+  font-family: TT Lakes;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  background-color: #ffffff;
+  padding-left: 24px;
+  padding-top: 23px;
+  padding-right: 24px;
+  padding-bottom: 32px;
 }
 
 .sidebar-header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sidebar__button:hover {
-    scale: 130%;
-    transition: 0.3s;
+  scale: 130%;
+  transition: 0.3s;
 }
 
 .sidebar-header__logo {
-    position: absolute;
-    left: 100px;
-    top: 18px;
+  position: absolute;
+  left: 100px;
+  top: 18px;
 }
 
 .sidebar-nav {
-    margin-top: 57px;
+  margin-top: 57px;
 }
 
 .sidebar-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .sidebar__link {
-    font-family: TT Lakes;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #1B1C21;
-    text-decoration: none;
+  font-family: TT Lakes;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  text-decoration: none;
 }
 
 .sidebar__link:hover {
-    transition: 0.3s;
-    font-size: 18px;
-    /* position: absolute; */
+  transition: 0.3s;
+  /* font-size: 18px; */
+  transform: scale(0.9);
+  /* position: absolute; */
 }
 
 .sidebar__link--state--active {
-    color: rgba(126, 126, 130, 1);
+  color: rgba(126, 126, 130, 1);
 }
 
 .sidebar__link--state--active:before {
-    display: block;
-    content: " ";
-    width: 4px;
-    height: 32px;
-    background-color: rgba(65, 246, 215, 1);
-    border-radius: 0 50% 50% 0 ;
-    position: relative;
-    left: -24px;
-    top: 26px;
-    color: rgba(126, 126, 130, 1);
+  display: block;
+  content: " ";
+  width: 4px;
+  height: 32px;
+  background-color: rgba(65, 246, 215, 1);
+  border-radius: 0 50% 50% 0;
+  position: relative;
+  left: -24px;
+  top: 26px;
+  color: rgba(126, 126, 130, 1);
 }
 
 .sidebar-footer {
-    position: relative;
-    top: 250px;
+  position: relative;
+  top: 250px;
 }
 
 .sidebar-communicates {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .sidebar-connect {
-    margin-bottom: 16px;
-    display: flex;
-    gap: 8%;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8%;
 }
 
 .sidebar-communicates__email {
-    font-family: TT Lakes;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #1B1C21;
-    text-decoration: none;
-    margin-bottom: 12px;
+  font-family: TT Lakes;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  text-decoration: none;
+  margin-bottom: 12px;
 }
 
 .sidebar-communicates__email:hover {
-    font-size: 18px;
-    transition: 0.3s;
+  font-size: 18px;
+  transition: 0.3s;
 }
 
 .sidebar-communicates__tel {
-    font-family: TT Lakes;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -0.6px;
-    color: #1B1C21;
-    text-decoration: none;
+  font-family: TT Lakes;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: #1b1c21;
+  text-decoration: none;
 }
 
 .sidebar-communicates__tel:hover {
-    font-size: 26px;
-    transition: 0.3s;
+  font-size: 26px;
+  transition: 0.3s;
 }
 
 .sidebar-langs {
-    gap: 7px;
+  gap: 7px;
 }
 
 .sidebar-langs__language {
-    display: none;
-    margin-right: 2%;
+  display: none;
+  margin-right: 2%;
 }
 
 .sidebar-langs__name:hover {
-    font-size: 18px;
-    transition: 0.3s;
+  font-size: 18px;
+  transition: 0.3s;
 }
 
 /* @media (max-width: 768px) {
