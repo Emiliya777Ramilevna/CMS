@@ -22,6 +22,9 @@
   padding-top: 23px;
   padding-right: 24px;
   padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .sidebar-header {
@@ -29,7 +32,18 @@
   justify-content: space-between;
 }
 
-.sidebar__button:hover {
+.sidebar__button {
+    background-color: #ffffff;
+    border: none;
+    box-sizing: border-box;
+}
+
+.sidebar__img {
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar__img:hover {
   scale: 130%;
   transition: 0.3s;
 }
@@ -61,13 +75,12 @@
   letter-spacing: -0.2px;
   color: #1b1c21;
   text-decoration: none;
+  display: inline-block;
 }
 
 .sidebar__link:hover {
   transition: 0.3s;
-  /* font-size: 18px; */
-  transform: scale(0.9);
-  /* position: absolute; */
+  scale: 105%;
 }
 
 .sidebar__link--state--active {
@@ -88,8 +101,7 @@
 }
 
 .sidebar-footer {
-  position: relative;
-  top: 250px;
+    margin-top: auto;
 }
 
 .sidebar-communicates {
@@ -113,10 +125,11 @@
   color: #1b1c21;
   text-decoration: none;
   margin-bottom: 12px;
+  display: inline-block;
 }
 
 .sidebar-communicates__email:hover {
-  font-size: 18px;
+  scale: 105%;
   transition: 0.3s;
 }
 
@@ -128,10 +141,11 @@
   letter-spacing: -0.6px;
   color: #1b1c21;
   text-decoration: none;
+  display: inline-block;
 }
 
 .sidebar-communicates__tel:hover {
-  font-size: 26px;
+  scale: 105%;
   transition: 0.3s;
 }
 
@@ -144,11 +158,11 @@
   margin-right: 2%;
 }
 
-.sidebar-langs__name:hover {
-  font-size: 18px;
-  transition: 0.3s;
+.sidebar-langs__name {
+    display: inline-block;
 }
 
-/* @media (max-width: 768px) {
-
-} */
+.sidebar-langs__name:hover {
+  scale: 105%;
+  transition: 0.3s;
+}

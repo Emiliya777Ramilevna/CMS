@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Первый макет</title>
     <link rel="stylesheet" href="./index.css/index.css">
 </head>
 <body class="body">
-    <!-- TODO: Сделать Flex -->
+
     <aside class="sidebar">
         <div class="sidebar-header">
-            <!-- TODO: Назначить размер обязательно -->
-            <!-- TODO: Обернуть в кнопки кнопки -->
-            <img class="sidebar__button" src="./index.css/burger.png" alt="Закрыть меню">
-            <!-- TODO: Обернуть в ссылки ссылки -->
-            <img class="sidebar-header__logo" src="./index.css/Group.png" alt="Логотип">
-    
-            <img  class="sidebar__button" src="./index.css/search.png" alt="Поиск">
+             <button class="sidebar__button">
+                <img class="sidebar__img" src="./index.css/burger.png" alt="Закрыть меню">
+             </button>
+            <a class="sidebar-header__home" href="#">
+                <img class="sidebar-header__logo" src="./index.css/Group.png" alt="Логотип">
+            </a>
+            <button class="sidebar__button">
+                <img  class="sidebar__img" src="./index.css/search.png" alt="Поиск">
+            </button>
         </div>
 
         <nav class="sidebar-nav">
@@ -47,13 +49,13 @@
                 </li>
             </ul>
         </nav>
-        <!-- TODO: Отступ автоматический (ЧТОБЫ НЕ УПОЛЗАЛ!!! (auto)) -->
+
         <div class="sidebar-footer">
             <div class="sidebar-communicates">
                 <div class="sidebar-connect">
-                    <img class="sidebar__button" src="./index.css/chat copy.png" alt="Звонок">
-                    <img class="sidebar__button" src="./index.css/chat.png" alt="Написать">
-                    <img class="sidebar__button" src="./index.css/profile.png" alt="Профиль">
+                    <img class="sidebar__img" src="./index.css/chat copy.png" alt="Звонок">
+                    <img class="sidebar__img" src="./index.css/chat.png" alt="Написать">
+                    <img class="sidebar__img" src="./index.css/profile.png" alt="Профиль">
                 </div>
                 <a class="sidebar-communicates__email" href="mailto://mail@cps.com">mail@cps.com</a>
                 <a class="sidebar-communicates__tel" href="tel:88008908900">8 800 890 8900</a>
@@ -68,5 +70,6 @@
             </div>
         </div>
     </aside>
+    
 </body>
 </html>
