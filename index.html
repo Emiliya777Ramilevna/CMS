@@ -98,6 +98,9 @@
                 <img  class="content-button__img" src="./index.css/profile.png" alt="Профиль">
             </button>
             <button class="content-button">
+                <!-- TODO: Круто что знаешь такие семантические теги, но в данных кнопках от figure + figcaption лучше избавиться
+                Они нужны нам для самодостаточных картинок с подписью, можно и оставить конечно, но будет семантически избыточно
+                достаточно будет span вместо figcaption а figure можно вообще опустить так как уже есть button в виде внешнего контейнера -->
                 <figure class="content-button__figure">
                     <img class="content-button__img" src="./index.css/main-repair.png" alt="Заявка">
                     <figcaption class="content-button__name">Оставить заявку</figcaption>
@@ -113,6 +116,7 @@
         <div class="content-main">
             <p class="content-section">Услуги и сервисы</p>
             <div class="content-url">
+                <!-- TODO давай тогда просто --active без --state? Чтобы без лишнего нейминга -->
                 <a class="content-link content-link--state--active" href="#">Ремонтируемые бренды</a>
                 <a class="content-link" href="#">Ремонтируемые устройства</a>
                 <a class="content-link" href="#">Цены на услуги</a>
@@ -121,6 +125,7 @@
             </div>
             <p class="content__text">
                 Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                <!-- TODO: Заменить на </br> вместо <br><br> (самозакрывающийся тег) -->
                 <br><br>
                 Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
             </p>
