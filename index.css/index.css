@@ -175,14 +175,17 @@
 
 
 .content {
-  width: 320px;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   background-color: rgba(248, 248, 248, 1);
   font-family: TT Lakes;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .content-header {
@@ -263,7 +266,7 @@
   position: relative;
   border-radius: 0 50% 50% 0;
   position: relative;
-  left: -16px;
+  left: -5vw;
   top: 0px;
 }
 
@@ -296,8 +299,9 @@
 
 .content__text {
   overflow: hidden;
-  height: 90px;
-  margin-left: 16px;
+  height: 12vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .content-button__expand {
@@ -309,8 +313,7 @@
   border: none;
   display: flex;
   padding: 0;
-  margin-left: 16px;
-  margin-bottom: 16px;
+  margin-left: 5vw;
 }
 
 .content-button__expand::before {
@@ -321,4 +324,9 @@
   content: url(./content-expand.png);
   position: relative;
   margin-right: 8px;
+}
+
+.content-img {
+  width: 100vw;
+  margin-bottom: 8vh;
 }
