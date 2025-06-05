@@ -229,6 +229,10 @@
   height: 32px;
 }
 
+.divider--visibility--hidden {
+  display: none;
+}
+
 .content-button__name {
   display: none;
 }
@@ -321,4 +325,26 @@
 .content-main__img {
   width: 100vw;
   margin-bottom: 8vh;
+}
+
+@media (min-width: 768px) {
+
+  .content-header {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .content-button--visibility--hidden {
+    display: flex;
+  } 
+
+  .divider--visibility--hidden {
+    display: flex;
+  }
+
+  .content-home {
+      margin-right: 32vw;
+  }
+
+
 }
