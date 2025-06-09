@@ -9,7 +9,7 @@
 
 .sidebar {
   width: 320px;
-  height: 100vh;
+  min-height: 100vh;
   filter: drop-shadow(16px 0 52px rgba(14, 24, 80, 0.2));
   font-family: TT Lakes;
   font-weight: 500;
@@ -196,8 +196,8 @@
   height: 88px;
   background-color: rgba(255, 255, 255, 1);
   border-bottom: 1px solid rgba(217, 255, 245, 1);
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .content-button {
@@ -247,7 +247,7 @@
   line-height: 40px;
   letter-spacing: -0.6px;
   display: flex;
-  margin-left: 5vw;
+  margin-left: 16px;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -261,7 +261,7 @@
   position: relative;
   border-radius: 0 50% 50% 0;
   position: relative;
-  left: -5vw;
+  left: -16px;
   top: 0px;
 }
 
@@ -271,7 +271,7 @@
   flex-wrap: nowrap;
   overflow: auto;
   scrollbar-width: none;
-  margin-left: 5vw;
+  margin-left: 16px;
 }
 
 .content-link {
@@ -291,11 +291,24 @@
   border-radius: 9%;
 }
 
-.content__text {
+.content-post {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+  gap: 16px;
+}
+
+.content-article {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-article__text {
   overflow: hidden;
-  height: 15vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  height: 90px;
+  margin-left: 16px;
+  margin-right: 16px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -309,7 +322,7 @@
   border: none;
   display: flex;
   padding: 0;
-  margin-left: 5vw;
+  margin-left: 16px;
 }
 
 .content-button__expand::before {
@@ -324,14 +337,13 @@
 
 .content-main__img {
   width: 100vw;
-  margin-bottom: 8vh;
 }
 
 @media (min-width: 768px) {
 
   .content-header {
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .content-button--visibility--hidden {
@@ -343,8 +355,11 @@
   }
 
   .content-home {
-      margin-right: 32vw;
+      /* margin-right: 32vw; */
   }
 
+  .content-img {
+    position: relative;
+  }
 
 }
