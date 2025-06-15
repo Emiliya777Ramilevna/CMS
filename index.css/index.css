@@ -439,6 +439,7 @@
 
   .content-url {
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .content-post {
@@ -458,8 +459,5 @@
   .content-main__img {
     width: 47vw;
   }
-
-
-
 
 }
