@@ -472,6 +472,7 @@
 }
 
 .brands {
+  min-height: 100vh;
   background-color: rgba(248, 248, 248, 1);
   display: flex;
   flex-direction: column;
@@ -504,8 +505,8 @@
   flex-direction: row;
   list-style: none;
   gap: 16px;
-  background-color: rgba(255, 255, 255, 1);
   margin-left: 16px;
+  background-color: rgba(248, 248, 248, 1);
 }
 
 .brands-button {
@@ -517,4 +518,56 @@
   border-radius: 5%;
   align-items: center;
   background-color: rgba(255, 255, 255, 1);
+}
+
+
+
+
+@media (min-width: 768px) {
+
+  .brands__section-name {
+    height: 56px;
+  }
+
+  .brands-list {
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 160px;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .brands-button {
+    width: 224px;
+    box-sizing: border-box;
+  }
+
+  .brands-button__expand {
+  font-family: TT Lakes;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background-color: rgba(248, 248, 248, 1);
+  border: none;
+  display: flex;
+  padding: 0;
+  margin-left: 16px;
+}
+
+.brands-button__expand::before {
+  content: " ";
+  display: flex;
+  width: 24px;
+  height: 24px;
+  content: url(./content-expand.png);
+  position: relative;
+  margin-right: 9px;
+}
+
+
+
+
+
+
 }
