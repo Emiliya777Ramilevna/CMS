@@ -460,3 +460,60 @@
   }
 
 }
+
+
+
+
+
+
+
+.content {
+  display: none;
+}
+
+.brands {
+  background-color: rgba(248, 248, 248, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.brands__section-name {
+  font-family: TT Lakes;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: rgba(126, 126, 130, 1);
+  flex-wrap: wrap;
+  padding: 16px;
+  display: flex;
+  border-top: 1px solid rgba(217, 255, 245, 1);
+  margin: 0;
+  min-width: 100vh;
+  box-sizing: border-box;
+  height: 80px;
+  background: linear-gradient(to right, rgba(248, 248, 248, 1), 50%, rgba(255, 255, 255, 1));
+}
+
+.brands-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 16px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.brands-button {
+  display: flex;
+  width: 240px;
+  height: 72px;
+  justify-content: space-around;
+  border: 1px solid rgba(234, 234, 234, 1);
+  border-radius: 5%;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+}
