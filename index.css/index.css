@@ -527,6 +527,7 @@
 
   .brands__section-name {
     height: 56px;
+    padding-left: 24px;
   }
 
   .brands-list {
@@ -535,6 +536,8 @@
     height: 160px;
     margin-left: 0;
     justify-content: center;
+    row-gap: 16px;
+    column-gap: 24px;
   }
 
   .brands-button {
