@@ -372,6 +372,7 @@
 
 .content-article {
   gap: 0;
+  gap: 10px;
 }
 
 .content-article__text {
@@ -393,5 +394,42 @@
   .content-main__img {
     width: 46vw;
   }
+
+}
+
+@media (min-width: 1120px) {
+
+  .content-header {
+    display: none;
+  }
+
+  .content-section {
+    margin-top: 3.7%;
+  }
+
+  .content-url {
+    flex-wrap: wrap;
+  }
+
+  .content-post {
+    margin-bottom: 4.5%;
+    gap: 36px;
+  }
+
+  .content-article {
+    gap: 14px;
+    margin-top: 9px;
+  }
+
+  .content-article__text {
+    height: 160px;
+  }
+
+  .content-main__img {
+    width: 47vw;
+  }
+
+
+
 
 }
