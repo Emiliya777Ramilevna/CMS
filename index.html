@@ -1,218 +1,402 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Первый макет</title>
-    <link rel="stylesheet" href="./index.css/index.css">
-</head>
-<body class="body">
-
-    <aside class="sidebar">
+    <link rel="stylesheet" href="./index.css/index.css" />
+  </head>
+  <body class="body">
+    <div class="block">
+      <aside class="sidebar">
         <div class="sidebar-header">
-             <button class="sidebar__button">
-                <img class="sidebar__img" src="./index.css/burger.png" alt="Закрыть меню">
-             </button>
-            <a class="sidebar-header__home" href="#">
-                <img class="sidebar-header__logo" src="./index.css/Group.png" alt="Логотип">
-            </a>
-            <button class="sidebar__button">
-                <img  class="sidebar__img" src="./index.css/search.png" alt="Поиск">
-            </button>
+          <button class="sidebar__button">
+            <img
+              class="sidebar__img"
+              src="./index.css/burger.png"
+              alt="Закрыть меню"
+            />
+          </button>
+          <a class="sidebar-header__home" href="#">
+            <img
+              class="sidebar-header__logo"
+              src="./index.css/Group.png"
+              alt="Логотип"
+            />
+          </a>
+          <button class="sidebar__button">
+            <img
+              class="sidebar__img"
+              src="./index.css/search.png"
+              alt="Поиск"
+            />
+          </button>
         </div>
 
         <nav class="sidebar-nav">
-            <ul class="sidebar-list"> 
-                <li class="">
-                    <a class="sidebar__link sidebar__link--state--active" href="#">Ремонт техники</a>
-                </li>
-                <li>
-                    <a class="sidebar__link" href="#">Услуги и сервисы</a>
-                </li>
-                <li>
-                    <a class="sidebar__link" href="#">Корпоративным клиентам</a>
-                </li>
-                <li>
-                    <a class="sidebar__link" href="#">Завоз техники</a>
-                </li>
-                <li>
-                    <a class="sidebar__link" href="#">Партнерам</a>
-                </li>
-                <li>
-                    <a class="sidebar__link" href="#">Производителям</a>
-                </li>
-                <li>
-                    <a class="sidebar__link" href="#">Наши сервисные центры</a>
-                </li>
-                <li>
-                    <a class="sidebar__link" href="#">Контакты</a>
-                </li>
-            </ul>
+          <ul class="sidebar-list">
+            <li class="">
+              <a class="sidebar__link sidebar__link--state--active" href="#"
+                >Ремонт техники</a
+              >
+            </li>
+            <li>
+              <a class="sidebar__link" href="#">Услуги и сервисы</a>
+            </li>
+            <li>
+              <a class="sidebar__link" href="#">Корпоративным клиентам</a>
+            </li>
+            <li>
+              <a class="sidebar__link" href="#">Завоз техники</a>
+            </li>
+            <li>
+              <a class="sidebar__link" href="#">Партнерам</a>
+            </li>
+            <li>
+              <a class="sidebar__link" href="#">Производителям</a>
+            </li>
+            <li>
+              <a class="sidebar__link" href="#">Наши сервисные центры</a>
+            </li>
+            <li>
+              <a class="sidebar__link" href="#">Контакты</a>
+            </li>
+          </ul>
         </nav>
 
         <div class="sidebar-footer">
-            <div class="sidebar-communicates">
-                <div class="sidebar-connect">
-                    <button class="sidebar__button">
-                        <img class="sidebar__img" src="./index.css/call.png" alt="Звонок">
-                    </button>
-                    <button class="sidebar__button">
-                        <img class="sidebar__img" src="./index.css/chat.png" alt="Написать">
-                    </button>
-                    <button class="sidebar__button">
-                        <img class="sidebar__img" src="./index.css/profile.png" alt="Профиль">                       
-                    </button>
-                </div>
-                <a class="sidebar-communicates__email" href="mailto://mail@cps.com">mail@cps.com</a>
-                <a class="sidebar-communicates__tel" href="tel:88008908900">8 800 890 8900</a>
+          <div class="sidebar-communicates">
+            <div class="sidebar-connect">
+              <button class="sidebar__button">
+                <img
+                  class="sidebar__img"
+                  src="./index.css/call.png"
+                  alt="Звонок"
+                />
+              </button>
+              <button class="sidebar__button">
+                <img
+                  class="sidebar__img"
+                  src="./index.css/chat.png"
+                  alt="Написать"
+                />
+              </button>
+              <button class="sidebar__button">
+                <img
+                  class="sidebar__img"
+                  src="./index.css/profile.png"
+                  alt="Профиль"
+                />
+              </button>
             </div>
-            <div class="sidebar-langs">
-                <input class="sidebar-langs__language" type="radio" id="RU" checked>
-                <label class="sidebar-langs__name" for="RU">RU</label>
-                <input class="sidebar-langs__language" type="radio" id="EN">
-                <label class="sidebar-langs__name" for="EN">EN</label>
-                <input class="sidebar-langs__language" type="radio" id="CH">
-                <label class="sidebar-langs__name" for="CH">CH</label>
-            </div>
-        </div>
-    </aside>
+            <a class="sidebar-communicates__email" href="mailto://mail@cps.com"
+              >mail@cps.com</a
+            >
+            <a class="sidebar-communicates__tel" href="tel:88008908900"
+              >8 800 890 8900
+            </a>
+          </div>
 
-    <section class="content">
-        <header class="content-header">
+          <div class="sidebar-langs">
+            <input
+              class="sidebar-langs__language"
+              type="radio"
+              id="RU"
+              checked
+            />
+            <label class="sidebar-langs__name" for="RU">RU</label>
+            <input class="sidebar-langs__language" type="radio" id="EN" />
+            <label class="sidebar-langs__name" for="EN">EN</label>
+            <input class="sidebar-langs__language" type="radio" id="CH" />
+            <label class="sidebar-langs__name" for="CH">CH</label>
+          </div>
+        </div>
+      </aside>
+      <div>
+        <section class="content">
+          <header class="content-header">
             <button class="content-button">
-                <img class="content-button__img" src="./index.css/main-burgrer.png" alt="Меню">
+              <img
+                class="content-button__img"
+                src="./index.css/main-burgrer.png"
+                alt="Меню"
+              />
             </button>
             <div>
-                <img class="divider divider--visibility--hidden" src="./index.css/content-divider.png" alt="Разделитель">
+              <img
+                class="divider divider--visibility--hidden"
+                src="./index.css/content-divider.png"
+                alt="Разделитель"
+              />
             </div>
             <button class="content-home">
-                <img class="content-home__logo" src="./index.css/Group.png" alt="Логотип">
+              <img
+                class="content-home__logo"
+                src="./index.css/Group.png"
+                alt="Логотип"
+              />
             </button>
             <button class="content-button content-button--visibility--hidden">
-                <img  class="content-button__img" src="./index.css/call.png" alt="Звонок">
+              <img
+                class="content-button__img"
+                src="./index.css/call.png"
+                alt="Звонок"
+              />
             </button>
             <button class="content-button content-button--visibility--hidden">
-                <img class="content-button__img" src="./index.css/chat.png" alt="Чат">
+              <img
+                class="content-button__img"
+                src="./index.css/chat.png"
+                alt="Чат"
+              />
             </button>
             <button class="content-button content-button--visibility--hidden">
-                <img  class="content-button__img" src="./index.css/profile.png" alt="Профиль">
+              <img
+                class="content-button__img"
+                src="./index.css/profile.png"
+                alt="Профиль"
+              />
             </button>
             <div>
-                <img class="divider" src="./index.css/content-divider.png" alt="Разделитель">
+              <img
+                class="divider"
+                src="./index.css/content-divider.png"
+                alt="Разделитель"
+              />
             </div>
-            <button class="content-button"><span class="content-button__name">Оставить заявку</span>
-                <img class="content-button__img" src="./index.css/main-repair.png" alt="Заявка">
+            <button class="content-button">
+              <span class="content-button__name">Оставить заявку</span>
+              <img
+                class="content-button__img"
+                src="./index.css/main-repair.png"
+                alt="Заявка"
+              />
             </button>
-            <button class="content-button"><span class="content-button__name">Статус ремонта</span>
-                <img class="content-button__img" src="./index.css/main-checkstatus.png" alt="Статус ремонта">
+            <button class="content-button">
+              <span class="content-button__name">Статус ремонта</span>
+              <img
+                class="content-button__img"
+                src="./index.css/main-checkstatus.png"
+                alt="Статус ремонта"
+              />
             </button>
-        </header>
-        <div class="content-section">
+          </header>
+          <div class="content-section">
             <p class="content-section__name">Услуги и сервисы</p>
-            <button class="content-button content-button--hidden"><span class="content-button__name">Оставить заявку</span>
-                <img class="content-button__img" src="./index.css/main-repair.png" alt="Заявка">
+            <button class="content-button content-button--hidden">
+              <span class="content-button__name">Оставить заявку</span>
+              <img
+                class="content-button__img"
+                src="./index.css/main-repair.png"
+                alt="Заявка"
+              />
             </button>
-            <button class="content-button content-button--hidden"><span class="content-button__name">Статус ремонта</span>
-                <img class="content-button__img" src="./index.css/main-checkstatus.png" alt="Статус ремонта">
+            <button class="content-button content-button--hidden">
+              <span class="content-button__name">Статус ремонта</span>
+              <img
+                class="content-button__img"
+                src="./index.css/main-checkstatus.png"
+                alt="Статус ремонта"
+              />
             </button>
-        </div>
-        <div class="content-url">
-            <a class="content-link content-link--active" href="#">Ремонтируемые бренды</a>
+          </div>
+          <div class="content-url">
+            <a class="content-link content-link--active" href="#"
+              >Ремонтируемые бренды</a
+            >
             <a class="content-link" href="#">Ремонтируемые устройства</a>
             <a class="content-link" href="#">Цены на услуги</a>
             <a class="content-link" href="#">Адреса сервисных центров</a>
             <a class="content-link" href="#">Специальные цены</a>
             <a class="content-link" href="#">Отзывы</a>
-        </div>
-        <div class="content-post">
+          </div>
+          <div class="content-post">
             <div class="content-article">
-                <p class="content-article__text">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-            <br><br>
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
-            <br>    Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-            </p>
-            <button class="content-button__expand">Читать далее</button>
+              <p class="content-article__text">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+                <br /><br />
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера
+                <br />
+                Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                очередь, советуют нас родным и близким.
+              </p>
+              <button class="content-button__expand">Читать далее</button>
             </div>
             <div class="content-img">
-                <img class="content-main__img" src="./index.css/content-main.jpg" alt="Логотип CPS">
+              <img
+                class="content-main__img"
+                src="./index.css/content-main.jpg"
+                alt="Логотип CPS"
+              />
             </div>
-        </div>
-    </section>
-    <section class="brands">
-        <p class="brands__section-name">
-            Ремонт техники различных брендов
-        </p>
-        <ul class="brands-list">
+          </div>
+        </section>
+
+        <section class="brands">
+          <p class="brands__section-name">Ремонт техники различных брендов</p>
+          <ul class="brands-list">
             <li>
-                <a href="#" class="brands-button">
-                    <img class="brands-button__logo" src="./index.css/brands-lenovo.png" alt="Логотип">
-                    <img class="brands-button__go" src="./index.css/brands-go.png" alt="Розовая стрелка">
-                </a>
+              <a href="#" class="brands-button">
+                <img
+                  class="brands-button__logo"
+                  src="./index.css/brands-lenovo.png"
+                  alt="Логотип"
+                />
+                <img
+                  class="brands-button__go"
+                  src="./index.css/brands-go.png"
+                  alt="Розовая стрелка"
+                />
+              </a>
             </li>
             <li>
-                <a href="#" class="brands-button">
-                    <img class="brands-button__logo" src="./index.css/brands-samsung.png" alt="Логотип">
-                    <img class="brands-button__go" src="./index.css/brands-go.png" alt="Розовая стрелка">
-                </a>
+              <a href="#" class="brands-button">
+                <img
+                  class="brands-button__logo"
+                  src="./index.css/brands-samsung.png"
+                  alt="Логотип"
+                />
+                <img
+                  class="brands-button__go"
+                  src="./index.css/brands-go.png"
+                  alt="Розовая стрелка"
+                />
+              </a>
             </li>
             <li>
-                <a href="#" class="brands-button">
-                    <img class="brands-button__logo" src="./index.css/brands-apple.png" alt="Логотип">
-                    <img class="brands-button__go" src="./index.css/brands-go.png" alt="Розовая стрелка">
-                </a>
+              <a href="#" class="brands-button">
+                <img
+                  class="brands-button__logo"
+                  src="./index.css/brands-apple.png"
+                  alt="Логотип"
+                />
+                <img
+                  class="brands-button__go"
+                  src="./index.css/brands-go.png"
+                  alt="Розовая стрелка"
+                />
+              </a>
             </li>
             <li>
-                <a href="#" class="brands-button">
-                    <img class="brands-button__logo" src="./index.css/brands-ViewSonic.png" alt="Логотип">
-                    <img class="brands-button__go" src="./index.css/brands-go.png" alt="Розовая стрелка">
-                </a>
+              <a href="#" class="brands-button">
+                <img
+                  class="brands-button__logo"
+                  src="./index.css/brands-ViewSonic.png"
+                  alt="Логотип"
+                />
+                <img
+                  class="brands-button__go"
+                  src="./index.css/brands-go.png"
+                  alt="Розовая стрелка"
+                />
+              </a>
             </li>
             <li>
-                <a href="#" class="brands-button">
-                    <img class="brands-button__logo" src="./index.css/brands-bosh.png" alt="Логотип">
-                    <img class="brands-button__go" src="./index.css/brands-go.png" alt="Розовая стрелка">
-                </a>
+              <a href="#" class="brands-button">
+                <img
+                  class="brands-button__logo"
+                  src="./index.css/brands-bosh.png"
+                  alt="Логотип"
+                />
+                <img
+                  class="brands-button__go"
+                  src="./index.css/brands-go.png"
+                  alt="Розовая стрелка"
+                />
+              </a>
             </li>
             <li>
-                <a href="#" class="brands-button">
-                    <img class="brands-button__logo" src="./index.css/brands-hp.png" alt="Логотип">
-                    <img class="brands-button__go" src="./index.css/brands-go.png" alt="Розовая стрелка">
-                </a>
+              <a href="#" class="brands-button">
+                <img
+                  class="brands-button__logo"
+                  src="./index.css/brands-hp.png"
+                  alt="Логотип"
+                />
+                <img
+                  class="brands-button__go"
+                  src="./index.css/brands-go.png"
+                  alt="Розовая стрелка"
+                />
+              </a>
             </li>
             <li>
-                <a href="#" class="brands-button">
-                    <img class="brands-button__logo" src="./index.css/brands-acer.png" alt="Логотип">
-                    <img class="brands-button__go" src="./index.css/brands-go.png" alt="Розовая стрелка">
-                </a>
+              <a href="#" class="brands-button">
+                <img
+                  class="brands-button__logo"
+                  src="./index.css/brands-acer.png"
+                  alt="Логотип"
+                />
+                <img
+                  class="brands-button__go"
+                  src="./index.css/brands-go.png"
+                  alt="Розовая стрелка"
+                />
+              </a>
             </li>
             <li>
-                <a href="#" class="brands-button">
-                    <img class="brands-button__logo" src="./index.css/brands-sony.png" alt="Логотип">
-                    <img class="brands-button__go" src="./index.css/brands-go.png" alt="Розовая стрелка">
-                </a>
+              <a href="#" class="brands-button">
+                <img
+                  class="brands-button__logo"
+                  src="./index.css/brands-sony.png"
+                  alt="Логотип"
+                />
+                <img
+                  class="brands-button__go"
+                  src="./index.css/brands-go.png"
+                  alt="Розовая стрелка"
+                />
+              </a>
             </li>
             <li>
-                <a href="#" class="brands-button">
-                    <img class="brands-button__logo" src="./index.css/brands-lenovo.png" alt="Логотип">
-                    <img class="brands-button__go" src="./index.css/brands-go.png" alt="Розовая стрелка">
-                </a>
+              <a href="#" class="brands-button">
+                <img
+                  class="brands-button__logo"
+                  src="./index.css/brands-lenovo.png"
+                  alt="Логотип"
+                />
+                <img
+                  class="brands-button__go"
+                  src="./index.css/brands-go.png"
+                  alt="Розовая стрелка"
+                />
+              </a>
             </li>
             <li>
-                <a href="#" class="brands-button">
-                    <img class="brands-button__logo" src="./index.css/brands-samsung.png" alt="Логотип">
-                    <img class="brands-button__go" src="./index.css/brands-go.png" alt="Розовая стрелка">
-                </a>
+              <a href="#" class="brands-button">
+                <img
+                  class="brands-button__logo"
+                  src="./index.css/brands-samsung.png"
+                  alt="Логотип"
+                />
+                <img
+                  class="brands-button__go"
+                  src="./index.css/brands-go.png"
+                  alt="Розовая стрелка"
+                />
+              </a>
             </li>
             <li>
-                <a href="#" class="brands-button">
-                    <img class="brands-button__logo" src="./index.css/brands-apple.png" alt="Логотип">
-                    <img class="brands-button__go" src="./index.css/brands-go.png" alt="Розовая стрелка">
-                </a>
+              <a href="#" class="brands-button">
+                <img
+                  class="brands-button__logo"
+                  src="./index.css/brands-apple.png"
+                  alt="Логотип"
+                />
+                <img
+                  class="brands-button__go"
+                  src="./index.css/brands-go.png"
+                  alt="Розовая стрелка"
+                />
+              </a>
             </li>
-        </ul>
-        <button class="brands-button__expand">Показать все</button>
-        <button class="brands-button__hide">Скрыть</button>
-    </section>
-</body>
+          </ul>
+          <button class="brands-button__expand">Показать все</button>
+          <button class="brands-button__hide">Скрыть</button>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>

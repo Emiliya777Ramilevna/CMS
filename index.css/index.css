@@ -7,8 +7,12 @@
   margin: 0;
 }
 
+.block {
+  display: flex;
+}
+
 .sidebar {
-  width: 320px;
+  min-width: 320px;
   min-height: 100vh;
   filter: drop-shadow(16px 0 52px rgba(14, 24, 80, 0.2));
   font-family: TT Lakes;
@@ -186,9 +190,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
-  top: -1000px;
-  left: 320px;
   gap: 8px;
 }
 
@@ -393,10 +394,6 @@
   margin-left: 0;
   margin-bottom: auto;
 }
-
-  .content-img {
-    position: relative;
-  }
 
   .content-main__img {
     width: 46vw;
@@ -606,12 +603,6 @@
 
 
 @media (min-width: 1120px) {
-
-  .brands {
-    position: relative;
-    top: -1000px;
-    left: 320px;
-  }
   
   .brands__section-name {
     padding-left: 32px;
