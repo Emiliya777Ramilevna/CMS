@@ -118,7 +118,7 @@
 .sidebar-connect {
   margin-bottom: 16px;
   display: flex;
-  gap: 8%;
+  gap: 1rem;
 }
 
 .sidebar-communicates__email {
@@ -160,7 +160,7 @@
 
 .sidebar-langs__language {
   display: none;
-  margin-right: 2%;
+  margin-right: 0.5rem;
 }
 
 .sidebar-langs__name {
@@ -303,7 +303,7 @@
 .content-post {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10%;
+  margin-bottom: 2rem;
   gap: 16px;
 }
 
@@ -376,7 +376,7 @@
     gap: 48px;
     margin-left: 24px;
     margin-right: 48px;
-    margin-bottom: 5%;
+    margin-bottom: 1.5rem;
 }
 
 .content-article {
@@ -443,7 +443,7 @@
   }
 
   .content-post {
-    margin-bottom: 4.5%;
+    margin-bottom: 3rem;
     gap: 36px;
   }
 
@@ -515,7 +515,8 @@
   display: flex;
   width: 240px;
   height: 72px;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 1rem;
   border: 1px solid rgba(234, 234, 234, 1);
   border-radius: 5%;
   align-items: center;
@@ -622,5 +623,3 @@
 
 
 }
-
-/* jhgbhljvbhjfvbljsb */
