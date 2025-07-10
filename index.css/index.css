@@ -895,6 +895,10 @@
   margin-left: 0.5rem;
 }
 
+.price-colums {
+  display: none;
+}
+
 .price-cell {
   width: 260px;
   height: 200px;
@@ -905,6 +909,7 @@
   grid-template-columns: 1fr 1fr;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 5%;
+  box-sizing: border-box;
 }
 
 .service-name {
@@ -920,7 +925,7 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0px;
-  color: rgba(126, 126, 130, 1) ;
+  color: rgba(126, 126, 130, 1);
 }
 
 .price-table__item {
@@ -942,7 +947,7 @@
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(255, 62, 121, 1);
-  border-radius: 40%;
+  border-radius: 20px;
   border: 1px solid rgba(255, 62, 121, 1);
   padding: 0;
   width: 119px;
@@ -1011,6 +1016,78 @@
     padding-left: 1.5rem;
   }
 
+  .price-colums {
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  .price-colums__header {
+    font-family: TT Lakes;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: rgba(126, 126, 130, 1);
+  }
+  
+  .price-table {
+    grid-auto-flow: row;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 2%;
+  }
+
+  .price-cell {
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 720px;
+    height: 64px;
+    background: none;
+    align-items: center;
+  }
+
+  .price-cell:last-child::after {
+    display: none;
+  }
+
+  .price-cell::after {
+    content: " ";
+    display: flex;
+    width: 688px;
+    height: 1px;
+    position: absolute;
+    background-color: rgba(234, 234, 234, 1);
+    margin-top: 4rem;
+  }
+
+  .price-table__header {
+    display: none;
+  }
+
+  .service-name {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .service-price {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .service-period {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  .price-table__button {
+    grid-row: 1;
+    grid-column: 4;
+  }
+
   .price__explanation {
     margin-left: 1.5rem;
     margin-right: 0;
@@ -1029,6 +1106,24 @@
 
   .price__section-name {
     padding-left: 2rem;
+  }
+
+  .price-table {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .price-cell {
+    width: 1056px;
+    padding: 1rem 1.5rem;
+  }
+
+  .price-cell::after {
+    width: 1008px;
+  }
+
+  .price-table__button {
+    justify-self: end;
   }
 
   .price__explanation {
