@@ -68,7 +68,7 @@
   }
   
   .sidebar-nav {
-    margin-top: 57px;
+    margin-top: 37px;
   }
   
   .sidebar-list {
@@ -107,9 +107,9 @@
     height: 32px;
     background-color: rgba(65, 246, 215, 1);
     border-radius: 0 50% 50% 0;
-    position: relative;
-    left: -24px;
-    top: 26px;
+    position: fixed;
+    left: 0;
+    top: 120px;
     color: rgba(126, 126, 130, 1);
   }
   
@@ -592,8 +592,7 @@
     flex-wrap: wrap;
     overflow: hidden;
     height: 160px;
-    margin-left: 0;
-    justify-content: center;
+    margin-left: 1.5rem;
     row-gap: 16px;
     column-gap: 24px;
   }
@@ -665,8 +664,7 @@
     grid-template-columns: repeat(4, 240px);
     grid-row-gap: 1rem;
     grid-column-gap: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 2rem;
   }
 
   .brands-button {
@@ -775,8 +773,7 @@
     flex-wrap: wrap;
     overflow: hidden;
     height: 160px;
-    margin-left: 0;
-    justify-content: center;
+    margin-left: 1.5rem;
     row-gap: 16px;
     column-gap: 24px;
   }
@@ -845,8 +842,7 @@
   .technique-list {
     grid-row-gap: 1rem;
     grid-column-gap: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 2rem;
   }
 
   .technique-button {
@@ -895,7 +891,7 @@
   margin-left: 0.5rem;
 }
 
-.price-colums {
+.price-columns {
   display: none;
 }
 
@@ -1016,7 +1012,7 @@
     padding-left: 1.5rem;
   }
 
-  .price-colums {
+  .price-columns {
     display: grid;
     grid-template-columns: 3fr 1fr 2fr;
     margin-left: 2.5rem;
@@ -1024,7 +1020,7 @@
     margin-top: 1rem;
   }
 
-  .price-colums__header {
+  .price-columns__header {
     font-family: TT Lakes;
     font-weight: 500;
     font-size: 14px;
@@ -1044,7 +1040,7 @@
   .price-cell {
     grid-template-columns: 3fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    width: 720px;
+    width: 100%;
     height: 64px;
     background: none;
     align-items: center;
@@ -1108,13 +1104,18 @@
     padding-left: 2rem;
   }
 
+  .price-columns {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+
   .price-table {
     margin-left: 2rem;
     margin-right: 2rem;
   }
 
   .price-cell {
-    width: 1056px;
+    width: 100%;
     padding: 1rem 1.5rem;
   }
 
