@@ -888,6 +888,95 @@
   background: linear-gradient(to right, rgba(248, 248, 248, 1), 50%, rgba(255, 255, 255, 1));
 }
 
+.price-table {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 1rem;
+  margin-left: 0.5rem;
+}
+
+.price-colums {
+  display: none;
+}
+
+.price-cell {
+  width: 260px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 1rem;
+  grid-template-rows: auto auto auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 5%;
+  box-sizing: border-box;
+}
+
+.service-name {
+  display: flex;
+  flex-direction: column;
+  grid-row: 1;
+  grid-column: 1 / -1;
+}
+
+.price-table__header {
+  font-family: TT Lakes;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  color: rgba(126, 126, 130, 1);
+}
+
+.price-table__item {
+  font-family: TT Lakes;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: rgba(27, 28, 33, 1);
+}
+
+.price-table__button {
+  font-family: TT Lakes;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 62, 121, 1);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 62, 121, 1);
+  padding: 0;
+  width: 119px;
+  height: 32px;
+  box-sizing: border-box;
+  text-align: center;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.price-table__go {
+  vertical-align: middle;
+  margin-left: 7px;
+}
+
+.service-price {
+  display: flex;
+  flex-direction: column;
+  grid-row: 2;
+  grid-column: 1 / -1;  
+}
+
+.service-period {
+  display: flex;
+  flex-direction: column; 
+  grid-row: 3;
+  grid-column: 1;
+}
+
 .price__explanation {
   font-family: TT Lakes;
   font-weight: 400;
@@ -901,9 +990,6 @@
 
 .price-offer {
   border: none;
-  /* display: flex; */
-  /* gap: 9px; */
-
   padding: 0;
   font-family: TT Lakes;
   font-weight: 500;
@@ -917,15 +1003,6 @@
   background-color: rgba(248, 248, 248, 1);
 }
 
-/* .price-offer__text {
-  font-family: TT Lakes;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  color: rgba(27, 28, 33, 1);
-} */
-
 .price-offer__go {
   width: 12px;
   height: 12px;
@@ -937,6 +1014,78 @@
 
   .price__section-name {
     padding-left: 1.5rem;
+  }
+
+  .price-colums {
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  .price-colums__header {
+    font-family: TT Lakes;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: rgba(126, 126, 130, 1);
+  }
+  
+  .price-table {
+    grid-auto-flow: row;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 2%;
+  }
+
+  .price-cell {
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 720px;
+    height: 64px;
+    background: none;
+    align-items: center;
+  }
+
+  .price-cell:last-child::after {
+    display: none;
+  }
+
+  .price-cell::after {
+    content: " ";
+    display: flex;
+    width: 688px;
+    height: 1px;
+    position: absolute;
+    background-color: rgba(234, 234, 234, 1);
+    margin-top: 4rem;
+  }
+
+  .price-table__header {
+    display: none;
+  }
+
+  .service-name {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .service-price {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .service-period {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  .price-table__button {
+    grid-row: 1;
+    grid-column: 4;
   }
 
   .price__explanation {
@@ -959,6 +1108,24 @@
     padding-left: 2rem;
   }
 
+  .price-table {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .price-cell {
+    width: 1056px;
+    padding: 1rem 1.5rem;
+  }
+
+  .price-cell::after {
+    width: 1008px;
+  }
+
+  .price-table__button {
+    justify-self: end;
+  }
+
   .price__explanation {
     margin-left: 2rem;
   }
@@ -975,7 +1142,6 @@
 
 .footer {
   border-top: 1px solid rgba(217, 255, 245, 1);
-  /* box-sizing: border-box; */
   background-color: rgba(248, 248, 248, 1);
   padding-bottom: 19px;
   font-family: TT Lakes;
@@ -988,7 +1154,6 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  /* min-width: 100vw; */
 }
 
 .footer-details {
@@ -1049,8 +1214,5 @@
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
-
-
 
 }
