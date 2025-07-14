@@ -1153,7 +1153,7 @@
   .price-cell::after {
     content: " ";
     display: flex;
-    width: 688px;
+    width: 90%;
     height: 1px;
     position: absolute;
     background-color: rgba(234, 234, 234, 1);
@@ -1220,7 +1220,7 @@
   }
 
   .price-cell::after {
-    width: 1008px;
+    width: 70%;
   }
 
   .price-table__button {
