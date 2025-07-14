@@ -28,16 +28,16 @@ buttonBrands.addEventListener("click", function() {
 })
 
 
-const buttoTechnique = document.querySelector(".technique-button__expand")
+const buttonTechnique = document.querySelector(".technique-button__expand")
 const techniqueList = document.querySelector(".technique-list")
     
-buttoTechnique.addEventListener("click", function() { 
+buttonTechnique.addEventListener("click", function() { 
        techniqueList.classList.toggle("expanded-height-technique");
-        buttoTechnique.classList.toggle("technique-button__hide");
-    if (buttoTechnique.textContent === "Показать все") { 
-        buttoTechnique.textContent = "Скрыть";
+        buttonTechnique.classList.toggle("technique-button__hide");
+    if (buttonTechnique.textContent === "Показать все") { 
+        buttonTechnique.textContent = "Скрыть";
     }
     else {
-        buttoTechnique.textContent = "Показать все";
+        buttonTechnique.textContent = "Показать все";
     }
 })
