@@ -159,7 +159,6 @@ function mobileSlider() {
                         enabled: false,
                         },
                 },
-                slidesPerView: "auto",
                 centeredSlides: false,
                 watchOverflow: true,
                 spaceBetween: 16,
