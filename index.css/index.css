@@ -562,8 +562,8 @@
   background-color: rgba(248, 248, 248, 1);
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-bottom: 52px;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .brands__section-name {
@@ -590,9 +590,26 @@
   display: flex;
   flex-direction: row;
   list-style: none;
-  gap: 16px;
-  margin-left: 16px;
+  margin-left: 1rem;
+  margin-right: 1rem;
   background-color: rgba(248, 248, 248, 1);
+}
+
+.swiper-pagination {
+    position: static;
+    margin-top: 1rem;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    background-color: rgba(221, 221, 221, 1);
+}
+
+.swiper-pagination-bullet:active {
+    background-color: rgba(181, 182, 188, 1);
 }
 
 .brands-button {
