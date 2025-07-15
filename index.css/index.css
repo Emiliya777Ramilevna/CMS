@@ -595,6 +595,15 @@
   background-color: rgba(248, 248, 248, 1);
 }
 
+/* .swiper-container {
+  width: 100%;
+  overflow: hidden;
+} */
+
+/* .swiper-slide {
+  width: 100%;
+} */
+
 .brands-button {
   display: flex;
   width: 240px;

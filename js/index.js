@@ -12,7 +12,6 @@ buttonText.addEventListener("click", function() {
     }
 })
 
-
 const buttonBrands = document.querySelector(".brands-button__expand")
 const brandsList = document.querySelector(".brands-list")
     
@@ -27,7 +26,6 @@ buttonBrands.addEventListener("click", function() {
     }
 })
 
-
 const buttonTechnique = document.querySelector(".technique-button__expand")
 const techniqueList = document.querySelector(".technique-list")
     
@@ -41,3 +39,27 @@ buttonTechnique.addEventListener("click", function() {
         buttonTechnique.textContent = "Показать все";
     }
 })
+
+
+// let swiperInstance = null;
+// function initOrDestroySwiper() {
+//     const isMobile = window.innerWidth <= 767;
+//     if (isMobile && !swiperInstance) {
+//         swiperInstance = new
+//         Swiper(".swiper-container", {
+//             slidesPerView: "auto",
+//             spaceBetween: 10,
+//             pagination: {
+//                 el: ".swiper-pagination",
+//                 clickable: true,
+//             },
+//         });
+//     } else if (!isMobile && swiperInstance) {
+//         swiperInstance.destroy(true, true);
+//         swiperInstance = null;
+//     }
+// }
+
+// document.addEventListener('DOMContentLoaded', initOrDestroySwiper);
+
+// window.addEventListener("resize", initOrDestroySwiper);
